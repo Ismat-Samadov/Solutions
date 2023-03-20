@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ConditionalStatement_2 {
+public class SGNFunction {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
