@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class MedianNumber {
     static int min(int x, int y, int z) {
 
         return Math.min(x, Math.min(y, z));
