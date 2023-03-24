@@ -1,14 +1,9 @@
 import java.util.*;
 
 
+public class PrintArray {
 
-public class PrintArray
-
-{
-
-    public static void main(String[] args)
-
-    {
+    public static void main(String[] args) {
 
         Scanner con = new Scanner(System.in);
 
@@ -19,7 +14,6 @@ public class PrintArray
         for (int i = 0; i < n; i++)
 
             m[i] = con.nextInt();
-
 
 
         for (int i = 0; i < n; i++)
