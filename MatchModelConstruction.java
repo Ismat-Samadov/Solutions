@@ -9,16 +9,18 @@ public class MatchModelConstruction {
 
         int matches = calculateMatches(N);
         System.out.println("The least quantity of matches needed is: " + matches);
+        scanner.close();
     }
 
     public static int calculateMatches(int N) {
-        int baseMatches = 9; // Matches needed for 3 bricks
-
-        if (N <= 3) {
-            return baseMatches;
+        int MatchesCount;
+        if (N == 1) {
+            MatchesCount = 12;
+        } else if (N == 0) {
+            MatchesCount = 0;
+        } else {
+            MatchesCount = (N - 1) * 8 + 12;
         }
-
-        int additionalMatches = (N - 3) * 3; // Matches needed for additional bricks
-        return baseMatches + additionalMatches;
+        return MatchesCount;
     }
 }
